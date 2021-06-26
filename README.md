@@ -27,7 +27,7 @@ git clone https://github.com/devwander/NLW-06-NodeJS
 npm install --save-dev
 
 # Yarn
-yarn add --save-dev
+yarn install --save-dev
 ```
 
 ---
