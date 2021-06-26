@@ -1,8 +1,10 @@
+import dotenv from "dotenv";
 import "reflect-metadata";
 import express, { Request, Response, NextFunction, response } from "express";
 import "express-async-errors";
 import cors from "cors";
 
+dotenv.config();
 import { router } from "./routes";
 
 import "./database";
@@ -28,4 +30,4 @@ app.use(
   }
 );
 
-app.listen(3000, () => console.log("Server is running!"));
+app.listen(process.env.SERVER_PORT, () => console.log("Server is running!"));

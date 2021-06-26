@@ -19,10 +19,7 @@ export function ensureAuthenticated(
   const [, token] = authToken.split(" ");
 
   try {
-    const { sub } = verify(
-      token,
-      "f6e5fa118bcbdef6f06a6273aebb0ac3"
-    ) as IPayLoad;
+    const { sub } = verify(token, process.env.SECRET_TOKEN) as IPayLoad;
 
     request.user_id = sub;
 
