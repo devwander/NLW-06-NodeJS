@@ -30,4 +30,7 @@ app.use(
   }
 );
 
-app.listen(process.env.SERVER_PORT, () => console.log("Server is running!"));
+app.listen(process.env.SERVER_PORT, () => {
+  console.log("Server is running!");
+  console.log(`Acess: http://localhost:${process.env.SERVER_PORT}`);
+});
