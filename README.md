@@ -68,4 +68,4 @@ yarn dev
 
 ## Contact
 
-If you have any questions about the project that was developed here, I will be happy to help you. Contact me by email: wanderjdev@gmail.com.
+If you have any questions about the project that was developed here, I will be happy to help you. Contact me by email: josewanderson173@gmail.com.
